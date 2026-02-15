@@ -8,7 +8,8 @@
 
             for(int i = 1; i <= 5; i++)
             {
-                action.Add(() => Console.WriteLine(i));
+                int index = i;
+                action.Add(() => Console.WriteLine(index));
             }
 
             foreach (var item in action)
