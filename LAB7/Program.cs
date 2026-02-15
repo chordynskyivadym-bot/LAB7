@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<Action> action = new List<Action>();
+
+            for(int i = 1; i <= 5; i++)
+            {
+                action.Add(() => Console.WriteLine(i));
+            }
+
+            foreach (var item in action)
+            {
+                item();
+            }
         }
     }
 }
