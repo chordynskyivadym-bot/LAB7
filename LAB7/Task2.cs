@@ -15,21 +15,21 @@ namespace LAB7
 
     class Task2
     {
-        static void Main(string[] args)
-        {
-            BankTerminal terminal = new BankTerminal();
+        //static void Main(string[] args)
+        //{
+        //    BankTerminal terminal = new BankTerminal();
 
-            terminal.OnMoneyWithdraw += (sum) => Console.WriteLine($"SMS: Знято {sum} грн.");
+        //    terminal.OnMoneyWithdraw += (sum) => Console.WriteLine($"SMS: Знято {sum} грн.");
 
-            terminal.Withdraw(500);
+        //    terminal.Withdraw(500);
 
-            Console.WriteLine("\nПОЧАТОК ЗЛОМУ");
+        //    Console.WriteLine("\nПОЧАТОК ЗЛОМУ");
 
-            //terminal.OnMoneyWithdraw.Invoke(999999);
+        //    //terminal.OnMoneyWithdraw.Invoke(999999);
 
-            //terminal.OnMoneyWithdraw = null;
+        //    //terminal.OnMoneyWithdraw = null;
 
-            Console.WriteLine("Не можливо зламати термінал. Вибиває помилку");
-        }
+        //    Console.WriteLine("Не можливо зламати термінал. Вибиває помилку");
+        //}
     }
 }
